@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playlist Lagu</title>
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    margin-top: 20px;
+}
+
+.player {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#cover {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 10px;
+}
+
+#judul {
+    color: #333;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 16px;
+}
+
+ul.playlist {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: left; /* Mengatur teks ke kiri */
+}
+
+ul.playlist li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+ul.playlist li:hover {
+    background-color: #f0f0f0;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Playlist Lagu</h1>
+    
+    <div class="player">
+        <img id="cover" src="" alt="Cover Lagu">
+        <h2 id="judul">Judul Lagu</h2>
+        <audio id="audio" src="Intro medan_mixdown.wav" controls></audio>
+        <br>
+        <button id="play">Play</button>
+        <button id="pause">Pause</button>
+        <button id="stop">Stop</button>
+    </div>
+    
+    <!-- Daftar lagu -->
+    <ul class="playlist">
+        <li data-src="lagu1.mp3" data-cover="cover1.jpg" data-judul="Lagu 1">Lagu 1</li>
+        <li data-src="lagu2.mp3" data-cover="cover2.jpg" data-judul="Lagu 2">Lagu 2</li>
+        <li data-src="lagu3.mp3" data-cover="cover3.jpg" data-judul="Lagu 3">Lagu 3</li>
+    </ul>
+    
+    <script src="pratikumWeb4-2.js"></script>
+</body>
+</html>
